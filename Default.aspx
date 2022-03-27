@@ -27,7 +27,7 @@
                             <asp:ObjectDataSource ID="odsCategries" runat="server" SelectMethod="Select" TypeName="CategoriesManager"></asp:ObjectDataSource>
                       </div>
                         <hr />
-                        <asp:Button ID="btnLogin" runat="server" Text="Add" CssClass="btn btn-primary w-100" OnClick="btnLogin_Click"  />
+                        <asp:Button ID="btnLogin" runat="server" Text="Add" CssClass="btn btn-danger w-100" OnClick="btnLogin_Click"  />
                             <asp:Label ID="lblMessage" runat="server" Text="" CssClass="text-danger"></asp:Label>
                     </div>
                 </div>
