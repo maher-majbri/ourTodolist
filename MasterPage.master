@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="ar" dir="rtl">
+<head runat="server">
+    <title>ToDoList App</title>
+    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      
+        
+        <section id="mainNavbar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+                <div class="container">
+                    <a class="navbar-brand" href="default.aspx">
+                        ToDoList App
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">My tasks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Today's</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">This Week</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <div class="input-group mb-3">
+                                <asp:TextBox ID="txtSearch" CssClass="form-control" type="search" placeholder="Search  ..." runat="server"></asp:TextBox>
+                                <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-secondary" Text="Search" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+               <section id="footer" class="bg-dark text-light py-5">
+            <div class="container text-center">
+
+               <hr />
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 py-2 text-lg-start">
+                        &copy; Copyrights 2021
+                    </div>
+                    <div class="col-12 col-md-6  col-lg-3 py-2 text-lg-end">
+                          <p>ToDoList App</p>
+                    </div>
+                    <div class="col-12 col-md-6  col-lg-3 py-2 text-lg-end">
+                          <p>ToDoList App</p>
+                    </div>
+                    <div class="col-12 col-md-6  col-lg-3 py-2 text-lg-end">
+                          <p>ToDoList App</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+       <script src="assets/js/bootstrap.bundle.min.js"></script>
+    </form>
+</body>
+</html>
